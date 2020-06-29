@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Water Bot</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>MeMaker chatbot: Water bot</h1>
+    <main class="container">
+        <h1 class="title-name">Water Bot</h1>
+        <div class="chatbot">
+            <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+            <script>
+                window.fbAsyncInit = function() {
+                    FB.init({
+                        xfbml            : true,
+                        version          : 'v7.0'
+                    });
+                };
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <div class="fb-customerchat" attribution=setup_tool page_id="103777544729115" theme_color="#20cef5">
+        </div>
+            </div>
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
