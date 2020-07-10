@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Bot</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;"></nav>
     <main class="container">
         <h1 class="title-name">Water Bot</h1>
         <div class="chatbot">
-
-            <h3>Olá Bem-Vindo ao WaterBot</h3>
-            <p>Neste site você encontrará a forma mais rápica de verificar os dias que chegará água em sua residência.</p>
-            <p>Mas também estaremos disponiveis para reclamações caso seja o seu interesse.</p>
-            <p>O WaterBot é a forma mais rapida para te ajudar.</p>
+            <h3 class="frase">Olá Bem-Vindo ao WaterBot</h3>
+            <p class="frase"> O WaterBot foi criado para te ajudar da melhor forma, onde atenderá as suas necessidades.
+                Neste site você encontrará a forma mais rápida de verificar os dias que
+                chegará água em sua residência.
+                Mas também estaremos disponiveis para reclamações caso seja o seu interesse.
+                O WaterBot é a forma mais rapida para te ajudar.
+                Com o seu novo amigo WaterBot você é atendido com facilidade no seu objetivo.</p>
             <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
+            <div id="fb-root"></div>
             <script>
-                window.fbAsyncInit = function() {
+                window.fbAsyncInit = function () {
                     FB.init({
-                        xfbml            : true,
-                        version          : 'v7.0'
+                        xfbml: true,
+                        version: 'v7.0'
                     });
                 };
-                (function(d, s, id) {
+                (function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0];
                     if (d.getElementById(id)) return;
                     js = d.createElement(s); js.id = id;
@@ -33,9 +38,10 @@
                 }(document, 'script', 'facebook-jssdk'));
             </script>
             <div class="fb-customerchat" attribution=setup_tool page_id="103777544729115" theme_color="#20cef5">
-        </div>
             </div>
+        </div>
     </main>
     <script src="./script.js"></script>
 </body>
+
 </html>
