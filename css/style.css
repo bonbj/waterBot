@@ -74,3 +74,13 @@ body {
     align-items: center;
     text-align: center;
 }
+
+._j68{
+    width: 70vw !important;
+    height: 60vh !important;
+    margin: auto !important;
+}
+
+.fb_dialog{
+    display:none !important;
+}
