@@ -68,19 +68,10 @@ body {
     box-shadow: 1rem 1rem 0 var(--shadow-box);
     border: 30px solid var(--aqua-1);
 }
+
 .frase{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-._j68{
-    width: 70vw !important;
-    height: 60vh !important;
-    margin: auto !important;
-}
-
-.fb_dialog{
-    display:none !important;
 }
