@@ -1,5 +1,3 @@
-var cssLink = document.createElement("link");
-cssLink.href = "./css/style.css";  
-cssLink.rel = "stylesheet";  
-cssLink.type = "text/css";  
-frames.document.body.appendChild(cssLink);
+document.getElementsByTagName("iframe")[1].style.display = "none";
+document.getElementsByTagName("iframe")[1].document.getElementById("u_0_0").style.display = "block";
+document.getElementsByTagName("iframe")[1].document.getElementsByClassName("_f_0")[0].style.display = "none";
